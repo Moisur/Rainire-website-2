@@ -8,17 +8,25 @@ import CheckMarkImg from '../../assect/checkmark.png'
 import docImg from '../../assect/Svg_sample2.png'
 import OfferImg from '../../assect/small.png'
 import AddImg from '../../assect/add.png'
+import BannerImages from '../../assect/BannerImages.png'
 
 import Card from './Card';
 
 const Home = () => {
     return (
-        <div className=' w-full lg:h-[100%] h-fit bg-[#E5E5E5] lg:flex justify-between'>
+        <div className=' w-full lg:h-[100%] h-fit   bg-[#E5E5E5] lg:flex justify-between'>
             <div className=''>
                 <div className=' px-9'>
-                    <img className='mt-[-6px]' src={bannarImg} alt="Bannar Images" />
+                    <div className='p-2 bg-gradient-to-r from-[#FF7594] to-[#FF7C65] w-full h-52 rounded flex justify-around items-center'>
+                        <img src={BannerImages} alt="BannerImages" />
+                        <div className='text-white '>
+                            <h1 className='text-xl font-medium'>Hello,Mosiur Islam !</h1>
+                            <p>Stay Up-to-Date With Your Appointments.</p>
+                            <p>You Have No pending Reports</p>
+                        </div>
+                    </div>
                 </div>
-                <div className=' px-9 pt-7 flex justify-between items-center'>
+                <div className=' px-9 pt-7 grid grid-cols-2 md:grid-cols-4  gap-7'>
                     <Card img={heartImg} title='Pulse Count' info='60 bpm' text='Normal' color='text-green-700' />
                     <Card img={pressureImg} title='Blood Pressure' info='110/70 mmHg' text='Sightly higher' color='text-lime-700' />
                     <Card img={oxygenImg} title='Oxygen Saturation' info='97%' text='Sightly higher' color='text-lime-700' />

@@ -4,11 +4,13 @@ import Home from './Components/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  
+
   return (
-    <div className="App bg-[#E5E5E5]">
+    <div className="bg-[#E5E5E5]">
       <div className='flex transform ease-in-out transition duration-500'>
-        <Navbar className="transform ease-in-out transition duration-500" ></Navbar>
+        <div className=''>
+          <Navbar className="transform ease-in-out transition duration-500" ></Navbar>
+        </div>
         <div className=' w-full '>
           <TopNav className="w-full translate-x-0 transform ease-in-out transition duration-500"></TopNav>
           <Routes>
