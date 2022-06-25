@@ -26,7 +26,7 @@ const Home = () => {
                 </div>
 
 
-                <div className=' bg-white mt-5 mx-9 rounded-md p-5 text-left lg:w-[718px] mb-12 lg:mb-0'>
+                <div className=' bg-white mt-5 mx-9 rounded-md p-5 text-left lg:w-[680px] mb-12 lg:mb-0'>
                     <h1 className=' text-base font-medium text-neutral'>To-Do List</h1>
                     <div className=' flex mb-2  py-2 items-center  relative'>
                         <textarea className="textarea textarea-bordered bg-primary w-full resize-none border-gray-300 "  ></textarea>
@@ -73,7 +73,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='  mx-10 mb-10'>
+            <div className='mr-4 mb-10'>
                 <div className='w-full bg-primary rounded-md lg:py-3 md:py-5 px-10 '>
                     <h1 className=' text-base mb-3 font-medium text-neutral text-left'>Upcoming Appointments</h1>
                     <div className=' flex items-center' >
@@ -93,7 +93,7 @@ const Home = () => {
                         </div>
                         <div className=' w-full'>
                             <div className=' flex border border-red-100 rounded-lg mb-3 w-full'>
-                                <div className=' px-5 py-1 rounded-lg  flex flex-col items-center justify-center w-[]63px'>
+                                <div className=' px-5 py-1 rounded-lg  flex flex-col items-center justify-center w-63px'>
                                     <h1 className='  font-medium text-[#384449] text-sm opacity-60'>2022</h1>
                                     <p className=' text-2xl text-neutral font-semibold'>13</p>
                                     <p className=' text-xl font-medium text-[#384449] opacity-60'>Sep</p>
@@ -181,7 +181,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className=' mt-3 bg-white rounded-md py-3 px-10'>
+                <div className=' mt-6 bg-white rounded-md py-3 px-10'>
                     <div className=' flex justify-between'>
                         <h1 className=' text-sm font-medium text-neutral'>Covid-19 Updates</h1>
                         <div>
