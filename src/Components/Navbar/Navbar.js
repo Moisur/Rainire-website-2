@@ -15,11 +15,9 @@ const Navbar = () => {
 
     const [show, setShow] = useState(true);
 
-
-
     return (
-        <div className={`${show ? 'w-64 translate-x-0' : 'w-[11vh]'} lg:h-screen  z-50 bg-white text-neutral  duration-500`}>
-            <div id="main" className={`${show ? 'translate-x-0 w-64 ' : ' -translate-x-2/3 w-64 '}  xl:rounded-r transform ease-in-out transition duration-500 flex justify-start items-start  h-screen flex-col relative `}>
+        <div className={`${show ? 'w-52 translate-x-0' : 'w-[11vh]'} lg:h-screen  z-50 bg-white text-neutral  duration-500`}>
+            <div id="main" className={`${show ? 'translate-x-0 w-52 ' : ' -translate-x-2/3 w-52 '}  xl:rounded-r transform ease-in-out transition duration-500 flex justify-start items-start  h-screen flex-col relative `}>
 
                 <div >
                     <div className="flex justify-between items-center space-x-3 absolute right-7 top-7 ease-in-out transition duration-500">
@@ -39,21 +37,21 @@ const Navbar = () => {
                 <div className=" w-full h-full flex flex-col justify-center items-center  duration-500 ">
 
                     <div className={`${show ? '' : 'hidden '} px-7 w-full flex justify-start h-[14vh] items-center space-x-3 duration-500`}>
-                        <img className=" w-[36px] h-[36px]" src={logoImg} alt="Logo image" />
-                        <img src={logoText} alt="Logo image" />
+                        <img className=" w-[36px] h-[36px]" src={logoImg} alt="Logo images" />
+                        <img src={logoText} alt="Logo images" />
                     </div>
 
                     <nav className={`${show ? ' mt-0 ' : 'mt-24 mb-28'} w-full h-[90vh]  duration-500`}>
                         <ul className="h-full py-28   flex flex-col justify-around  duration-500">
                             <NavLink to={'/'}>
-                                <div className={`${show ? 'px-8 translate-x-0' : 'justify-end px-4'} flex items-center h-10  w-full  duration-500 `}>
+                                <div className={`${show ? 'px-4 translate-x-0' : 'justify-end px-4'} flex items-center h-10  w-full  duration-500 `}>
                                     <FiHome className={` mr-5 text-xl `} />
                                     <p className={`${show ? '' : 'hidden'} neutral`}>Home</p>
                                 </div>
                             </NavLink>
 
                             <NavLink to={'patientProfile'}>
-                                <div className={`${show ? 'px-8' : 'justify-end px-4'} flex items-center h-10  w-full   duration-500`}>
+                                <div className={`${show ? 'px-4' : 'justify-end px-4'} flex items-center h-10  w-full   duration-500`}>
                                     <BiUser className={` mr-5 text-xl`} />
                                     <p className={`${show ? '' : 'hidden'}`}>Patient Profile</p>
                                 </div>
@@ -61,21 +59,21 @@ const Navbar = () => {
 
 
                             <NavLink to={'appointments'}>
-                                <div className={`${show ? 'px-8' : 'justify-end px-4'} flex items-center h-10  w-full   duration-500`}>
+                                <div className={`${show ? 'px-4' : 'justify-end px-4'} flex items-center h-10  w-full   duration-500`}>
                                     <BsCalendar2Plus className={` mr-5 text-xl`} />
                                     <p className={`${show ? '' : 'hidden'}`}>Appointments</p>
                                 </div>
                             </NavLink>
 
                             <NavLink to={'medicalHistory'}>
-                                <div className={`${show ? 'px-8' : 'justify-end px-4'} flex items-center h-10  w-full   duration-500`}>
+                                <div className={`${show ? 'px-4' : 'justify-end px-4'} flex items-center h-10  w-full   duration-500`}>
                                     <BiHistory className={` mr-5 text-xl`} />
                                     <p className={`${show ? '' : 'hidden'}`}>Medical History</p>
                                 </div>
                             </NavLink>
 
                             <NavLink to={'settings'}>
-                                <div className={`${show ? 'px-8' : 'justify-end px-4'} flex items-center h-10  w-full   duration-500`}>
+                                <div className={`${show ? 'px-4' : 'justify-end px-4'} flex items-center h-10  w-full   duration-500`}>
                                     <IoSettingsOutline className={` mr-5 text-xl`} />
                                     <p className={`${show ? '' : 'hidden'}`}>Settings</p>
                                 </div>

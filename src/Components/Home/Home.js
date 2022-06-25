@@ -13,10 +13,10 @@ import Card from './Card';
 
 const Home = () => {
     return (
-        <div className=' w-full lg:h-[89vh] h-fit bg-[#E5E5E5] lg:flex  block  justify-between'>
+        <div className=' w-full lg:h-[100%] h-fit bg-[#E5E5E5] lg:flex justify-between'>
             <div className=''>
                 <div className=' px-9'>
-                    <img className='mt-[-6px]' src={bannarImg} alt="Bannar Image" />
+                    <img className='mt-[-6px]' src={bannarImg} alt="Bannar Images" />
                 </div>
                 <div className=' px-9 pt-7 flex justify-between items-center'>
                     <Card img={heartImg} title='Pulse Count' info='60 bpm' text='Normal' color='text-green-700' />
@@ -36,7 +36,7 @@ const Home = () => {
                             <p className=' text-primary ml-2'>Add</p>
                         </button>
                         <button className='lg:hidden absolute right-0 bottom-2'>
-                            <img src={AddImg} alt="add Image" />
+                            <img src={AddImg} alt="add Images" />
                         </button>
                     </div>
                     <div className=' flex justify-between mb-4'>
@@ -73,7 +73,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className=' lg:mr-10 mx-10 mb-10'>
+            <div className='  mx-10 mb-10'>
                 <div className='w-full bg-primary rounded-md lg:py-3 md:py-5 px-10 '>
                     <h1 className=' text-base mb-3 font-medium text-neutral text-left'>Upcoming Appointments</h1>
                     <div className=' flex items-center' >
@@ -190,8 +190,8 @@ const Home = () => {
                         </div>
                     </div>
                     <div className=' flex items-center justify-between'>
-                        <img src={docImg} alt="Doctor image" />
-                        <img src={OfferImg} alt="Doctor image" />
+                        <img src={docImg} alt="Doctor images" />
+                        <img src={OfferImg} alt="Doctor images" />
                     </div>
                 </div>
             </div>
