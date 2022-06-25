@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import TopNav from './Components/Navbar/TopNav';
+import Home from './Components/Home/Home';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-[#E5E5E5]">
+      <div className='flex transform ease-in-out transition duration-500'>
+        <Navbar className="transform ease-in-out transition duration-500"></Navbar>
+        <div className=' w-full'>
+          <TopNav className="w-full translate-x-0 transform ease-in-out transition duration-500"></TopNav>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+
+      </div>
+
     </div>
   );
 }
 
 export default App;
+

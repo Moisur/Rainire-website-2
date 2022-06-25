@@ -1,0 +1,16 @@
+.show{
+    width: 1200px;
+}
+.menu{
+    width: 1200px;
+}
+.close{
+    background: #000;
+    width: 800px;
+}
+#Main{
+    background: #000;
+}
+.active{
+    color:#FF7594;
+}
