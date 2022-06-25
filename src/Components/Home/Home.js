@@ -1,5 +1,4 @@
 import React from 'react';
-import bannarImg from '../../assect/Frame 4.png'
 import heartImg from '../../assect/Frame 2846.png'
 import pressureImg from '../../assect/Frame 2846 (1).png'
 import oxygenImg from '../../assect/Frame 2846 (2).png'
@@ -14,11 +13,11 @@ import Card from './Card';
 
 const Home = () => {
     return (
-        <div className=' w-full lg:h-[100%] h-fit   bg-[#E5E5E5] lg:flex justify-between'>
+        <div className=' w-full lg:h-[100%] h-fit   bg-white md:bg-[#E5E5E5] lg:flex justify-between'>
             <div className=''>
-                <div className=' px-9'>
-                    <div className='p-2 bg-gradient-to-r from-[#FF7594] to-[#FF7C65] w-full h-52 rounded flex justify-around items-center'>
-                        <img src={BannerImages} alt="BannerImages" />
+                <div className='md:px-9 '>
+                    <div className='p-5 md:p-2 bg-gradient-to-r from-[#FF7594] to-[#FF7C65] w-full  rounded md:flex justify-around items-center'>
+                        <img className='w-[400px] mx-auto md:w-0' src={BannerImages} alt="BannerImages" />
                         <div className='text-white '>
                             <h1 className='text-xl font-medium'>Hello,Mosiur Islam !</h1>
                             <p>Stay Up-to-Date With Your Appointments.</p>
@@ -26,7 +25,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className=' px-9 pt-7 grid grid-cols-2 md:grid-cols-4  gap-7'>
+                <div className='px-5 md:px-9 pt-7 grid grid-cols-2 md:grid-cols-4  gap-7'>
                     <Card img={heartImg} title='Pulse Count' info='60 bpm' text='Normal' color='text-green-700' />
                     <Card img={pressureImg} title='Blood Pressure' info='110/70 mmHg' text='Sightly higher' color='text-lime-700' />
                     <Card img={oxygenImg} title='Oxygen Saturation' info='97%' text='Sightly higher' color='text-lime-700' />
@@ -34,7 +33,9 @@ const Home = () => {
                 </div>
 
 
-                <div className=' bg-white mt-5 mx-9 rounded-md p-5 text-left lg:w-[680px] mb-12 lg:mb-0'>
+                <div className=' bg-white mt-5 mx-4  md:mx-9 rounded-md p-5 text-left lg:w-[680px] mb-12 lg:mb-0
+                
+                border md:border-none'>
                     <h1 className=' text-base font-medium text-neutral'>To-Do List</h1>
                     <div className=' flex mb-2  py-2 items-center  relative'>
                         <textarea className="textarea textarea-bordered bg-primary w-full resize-none border-gray-300 "  ></textarea>
@@ -58,31 +59,43 @@ const Home = () => {
                         </button>
                     </div>
                     <div >
-                        <div className='flex text-neutral mb-3'>
+                        <div className='flex text-neutral mb-3 '>
                             <input type="checkbox" class="checkbox mr-3 rounded checkbox-secondary" />
-                            <p className=' text-sm font-medium font-neutral mr-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <p className='text-sm font-medium text-gray-400'>last Added: 10 sep 2022</p>
+                            <div className='md:flex'>
+                                <p className=' text-sm font-medium font-neutral mr-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <p className='text-sm font-medium text-gray-400'>last Added: 10 sep 2022</p>
+                            </div>
+                        </div>
+                        <div className=' flex text-neutral mb-3'>
+                            <input type="checkbox" class="checkbox mr-3  rounded checkbox-secondary" />
+                            <div className='md:flex'>
+                                <p className=' text-sm font-medium font-neutral mr-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <p className='text-sm font-medium text-gray-400'>last Added: 10 sep 2022</p>
+                            </div>
+
+                        </div>
+                        <div className=' flex text-neutral mb-3'>
+
+                            <input type="checkbox" class="checkbox mr-3 rounded checkbox-secondary" />
+                            <div className='md:flex'>
+                                <p className=' text-sm font-medium font-neutral md:mr-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <p className='text-sm font-medium text-gray-400'>last Added: 10 sep 2022</p>
+                            </div>
+
                         </div>
                         <div className=' flex text-neutral mb-3'>
                             <input type="checkbox" class="checkbox mr-3 rounded checkbox-secondary" />
-                            <p className=' text-sm font-medium font-neutral mr-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <p className='text-sm font-medium text-gray-400'>last Added: 10 sep 2022</p>
-                        </div>
-                        <div className=' flex text-neutral mb-3'>
-                            <input type="checkbox" class="checkbox mr-3 rounded checkbox-secondary" />
-                            <p className=' text-sm font-medium font-neutral mr-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <p className='text-sm font-medium text-gray-400'>last Added: 10 sep 2022</p>
-                        </div>
-                        <div className=' flex text-neutral mb-3'>
-                            <input type="checkbox" class="checkbox mr-3 rounded checkbox-secondary" />
-                            <p className=' text-sm font-medium font-neutral mr-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <p className='text-sm font-medium text-gray-400'>last Added: 10 sep 2022</p>
+                            <div className='md:flex'>
+                                <p className=' text-sm font-medium font-neutral md:mr-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <p className='text-sm font-medium text-gray-400'>last Added: 10 sep 2022</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div className='mr-4 mb-10'>
-                <div className='w-full bg-primary rounded-md lg:py-3 md:py-5 px-10 '>
+                <div className='w-92 mx-auto md:w-full bg-primary rounded-md lg:py-3 md:py-5 px-10 '>
                     <h1 className=' text-base mb-3 font-medium text-neutral text-left'>Upcoming Appointments</h1>
                     <div className=' flex items-center' >
                         <div className=' flex flex-col items-center lg:mr-6 mr-3'>
@@ -96,8 +109,6 @@ const Home = () => {
                             <hr className=' h-[75px] w-[1px]  bg-gray-400' />
 
                             <div className=' h-4 w-4 rounded-full bg-[#98C7FF] my-3'></div>
-
-
                         </div>
                         <div className=' w-full'>
                             <div className=' flex border border-red-100 rounded-lg mb-3 w-full'>
@@ -189,17 +200,38 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className=' mt-6 bg-white rounded-md py-3 px-10'>
+                {/* =========================================================
+                                            Covid-19 Updates Area 
+                    ========================================================= */}
+                <div className=' m-6 bg-white rounded-md py-3 px-5 md:px-10 border md:border-none '>
                     <div className=' flex justify-between'>
-                        <h1 className=' text-sm font-medium text-neutral'>Covid-19 Updates</h1>
+                        <h1 className=' text-sm font-medium md:text-neutral text-[#FF7594]'>Covid-19 Updates</h1>
                         <div>
                             <h1 className=' text-sm font-medium text-neutral'>10 September 2022</h1>
                             <p className=' text-sm text-[#8A8686]'>Thursday 10:00:00 AM</p>
                         </div>
                     </div>
-                    <div className=' flex items-center justify-between'>
-                        <img src={docImg} alt="Doctor images" />
-                        <img src={OfferImg} alt="Doctor images" />
+                    <div className=' md:flex items-center justify-between text-center'>
+                        <img className='w-300px mx-auto mb-10 md:0' src={docImg} alt="Doctor images" />
+                        <img className='hidden md:block' src={OfferImg} alt="Doctor images" />
+                        <div className='bg-gradient-to-r from-[#FF7594] to-[#FF7C65] w-[210px] mx-auto p-2 text-center text-white rounded-md block md:hidden'>
+                            <div className='mt-10'>
+                                <p className=''>Infection Number</p>
+                                <h1 className='text-4xl font-bold mt-4 '>500</h1>
+                            </div>
+                            <div className='mt-10'>
+                                <p className=''>Infection Rate</p>
+                                <h1 className='text-4xl font-bold mt-4 '>10%</h1>
+                            </div>
+                            <div className='mt-10'>
+                                <p className=''>Total Infection </p>
+                                <h1 className='text-4xl font-bold mt-4 '>500,000</h1>
+                            </div>
+                            <div className='mt-10'>
+                                <p className=''> Number of Death</p>
+                                <h1 className='text-4xl font-bold mt-4 '>20</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
