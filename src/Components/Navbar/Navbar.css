@@ -1,16 +1,35 @@
-.show{
+.mobileResponsive {
+    background: #E5E5E5;
+
+}
+
+;
+
+
+.show {
     width: 1200px;
 }
-.menu{
+
+.menu {
     width: 1200px;
 }
-.close{
+
+.close {
     background: #000;
     width: 800px;
 }
-#main{
+
+#main {
     background: #000;
 }
-.active{
-    color:#FF7594;
+
+.active {
+    color: #FF7594;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .mobileResponsive {
+        background: linear-gradient(to right, #FF7594, #FF7C65);
+    }
 }

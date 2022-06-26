@@ -17,21 +17,25 @@ const Navbar = () => {
 
     return (
         <>
-            <div className={`${show ? 'w-52 translate-x-0 ' : 'w-[10vh]'} h-fit  z-50 bg-white text-neutral  duration-500 hidden md:block`}>
+            <div className={`${show ? 'w-52 translate-x-0 ' : 'w-[10vh]'} h-full  z-50 bg-white  text-neutral  duration-500 hidden md:block`}>
                 <div id="" className={`${show ? 'translate-x-0 w-52 ' : ' -translate-x-2/3 w-52 '}  xl:rounded-r transform ease-in-out transition duration-500 flex justify-start items-start  h-screen flex-col relative `}>
 
                     <div>
+                         {/* ========================  navbar icon   ===========================*/}
                         <div className=" absolute right-4 top-7 ease-in-out transition duration-500">
                             <button aria-label="open" id="open" onClick={() => setShow(true)} className={` ${show ? 'hidden' : ''} focus:outline-none focus:ring-2 `}>
                                 <img className=" w-[36px] h-[36px] " src={BarIcon} alt="Bar Icon" />
                             </button>
                         </div>
+                         {/* ========================  navbar icon and text   ===========================*/}
                         <div aria-label="toggler" className="flex justify-center  items-center absolute right-0  top-5  ease-in-out transition duration-500">
                             <button aria-label="close" id="close" onClick={() => setShow(false)} className={`${show ? '' : 'hidden'} focus:outline-none focus:ring-2`}>
                                 <img className=" w-[36px] h-[36px]" src={leftArrow} alt="left arrow" />
                             </button>
                         </div>
                     </div>
+
+                       {/* ========================  Navbar Menu Area  ===========================*/}
                     <div className=" w-full h-full flex flex-col justify-center items-center  duration-500 ">
 
                         <div className={`${show ? '' : 'hidden '} px-7 w-full flex justify-start h-[14vh] items-center space-x-3 duration-500`}>
@@ -39,6 +43,7 @@ const Navbar = () => {
                             <img src={logoText} alt="Logo images" />
                         </div>
 
+                        {/* ========================  Router area ===========================*/}
                         <nav className={`${show ? ' mt-0 ' : 'mt-24 mb-28'} w-full h-[90vh]  duration-500`}>
                             <ul className="h-full lg:py-28   flex flex-col justify-center lg:justify-around item-center duration-500">
                                 <NavLink to={'/'}>
@@ -79,6 +84,7 @@ const Navbar = () => {
                             </ul>
                         </nav>
 
+                        {/* ========================  New appointment Area ===========================*/}
                         <button className={`${show ? '' : 'hidden'} bg-gradient-to-r from-[#FF7594] to-[#FF7C65] mb-12 p-3 rounded-md text-white  duration-500`}>New appointment</button>
 
                         <button className={`${show ? ' hidden' : ''} absolute bottom-10 right-4 h-[40px] w-[40px]  duration-500`}><img src={appointmentIcon} alt="Appointment icon" /></button>

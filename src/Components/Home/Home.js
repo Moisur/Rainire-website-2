@@ -14,7 +14,7 @@ import Appointments from '../Appointments/Appointments';
 
 const Home = () => {
     return (
-        <div className=' w-full lg:h-[100%] h-fit   bg-white md:bg-[#E5E5E5] lg:flex justify-between'>
+        <div className=' w-full lg:h-[100%]   bg-white md:bg-[#E5E5E5] lg:flex justify-between'>
             <div className=''>
                 {/* =======================================================================================
                                                     Home pages banners
@@ -22,7 +22,7 @@ const Home = () => {
                 */}
                 <div className='md:px-9 '>
                     <div className='p-5 md:p-2 bg-gradient-to-r from-[#FF7594] to-[#FF7C65] w-full  rounded md:flex justify-around items-center'>
-                        <img className='w-[400px] mx-auto md:w-0' src={BannerImages} alt="BannerImages" />
+                        <img className='w-[400px]  mx-auto md:w-auto' src={BannerImages} alt="BannerImages" />
                         <div className='text-white mt-10 md:mt-10'>
                             <h1 className='text-xl font-medium'>Hello,Mosiur Islam !</h1>
                             <p>Stay Up-to-Date With Your Appointments.</p>

@@ -4,6 +4,7 @@ import toggleSun from '../../assect/Toggle button.png'
 import UserImage from '../../assect/Frame 2696.png'
 import menu from '../../assect/Frame 2855.png'
 import MobailMenu from './MobailMenu/MobailMenu';
+import './Navbar.css'
 const TopNav = () => {
     const location = useLocation();
     const path = location.pathname;
@@ -11,7 +12,7 @@ const TopNav = () => {
     const [sdsdfk,thikaceto]=useState(false)
     return (
         <div>
-            <div className={`md:bg-[#E5E5E5]  bg-gradient-to-r from-[#FF7594] to-[#FF7C65] h-[11vh] w-full flex justify-between items-center px-5 md:px-10  transform ease-in-out transition duration-500`}>
+            <div className={`mobileResponsive   h-[11vh] w-full flex justify-between items-center px-5 md:px-10  transform ease-in-out transition duration-500`}>
                 <label  onClick={()=>thikaceto(true)} for="my-drawer" class="drawer-button md:hidden">
                     <img src={menu} alt="" />
                 </label>
