@@ -113,7 +113,7 @@ const Home = () => {
                                              Upcoming   Appointments
                 ============================================================================================
                 */}
-            <div className='mb-10 md:mr-10'>
+            <div className='mb-10 lg:mr-10'>
                 <div className='w-full bg-primary md:rounded-lg lg:py-3 md:py-5  '>
 
 

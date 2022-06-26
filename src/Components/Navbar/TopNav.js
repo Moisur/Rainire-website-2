@@ -8,12 +8,19 @@ import './Navbar.css'
 const TopNav = () => {
     const location = useLocation();
     const path = location.pathname;
-    console.log(path);
-    const [sdsdfk,thikaceto]=useState(false)
+
+    /* =================== t=============== */
+
+
+    const toggleClass = ' transform translate-x-5';
+
+
+
+
     return (
         <div>
-            <div className={`mobileResponsive   h-[11vh] w-full flex justify-between items-center px-5 md:px-10  transform ease-in-out transition duration-500`}>
-                <label  onClick={()=>thikaceto(true)} for="my-drawer" class="drawer-button md:hidden">
+            <div style={{ backgroundColor: `${toggle ? '' : 'black'}` }} className={` mobileResponsive   h-[11vh] w-full flex justify-between items-center px-5 md:px-10  transform ease-in-out transition duration-500`}>
+                <label for="my-drawer" class="drawer-button md:hidden">
                     <img src={menu} alt="" />
                 </label>
                 <div className='text-white md:text-[#646F75] mr-14 md:mr-0'>
@@ -25,16 +32,30 @@ const TopNav = () => {
                 </div>
                 <div className=' flex items-center'>
                     <img className='w-14 md:w-full' src={toggleSun} alt="Go to sun" />
+                    
+
+                    {/* <div
+                        className="md:w-14 md:h-7 w-12 h-6 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer"
+                        onClick={() => {
+                            setToggle(!toggle);
+                        }}
+                    >
+                        <div className={`bg-white md:w-6 md:h-6 h-5 w-5 rounded-full shadow-md 
+         transform" + ${(toggle ? null : toggleClass)}`}>
+
+                        </div>
+
+                    </div> */}
+
+
                     <img className='w-14 md:w-full ml-4  md:ml-6' src={UserImage} alt="Go to User" />
                 </div>
             </div>
 
             {/* ====================== ====================== */}
-            {
-                sdsdfk&& <MobailMenu></MobailMenu>
-            }
-           
-            
+
+
+
         </div>
     );
 };
