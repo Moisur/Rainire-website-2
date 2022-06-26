@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { } from 'react';
 import { useLocation } from 'react-router-dom';
 import toggleSun from '../../assect/Toggle button.png'
 import UserImage from '../../assect/Frame 2696.png'
 import menu from '../../assect/Frame 2855.png'
-import MobailMenu from './MobailMenu/MobailMenu';
 import './Navbar.css'
+import MobileMenu from './MobileMenu/MobileMenu';
 const TopNav = () => {
     const location = useLocation();
     const path = location.pathname;
@@ -12,15 +12,19 @@ const TopNav = () => {
     /* =================== t=============== */
 
 
-    const toggleClass = ' transform translate-x-5';
+    // const toggleClass = ' transform translate-x-5';
+    // const [toggle,setToggle]=useState(false)
 
 
 
 
     return (
         <div>
-            <div style={{ backgroundColor: `${toggle ? '' : 'black'}` }} className={` mobileResponsive   h-[11vh] w-full flex justify-between items-center px-5 md:px-10  transform ease-in-out transition duration-500`}>
-                <label for="my-drawer" class="drawer-button md:hidden">
+            <div className=' md:hidden'>
+                <MobileMenu></MobileMenu>
+            </div>
+            <div className={` mobileResponsive   h-[11vh] w-full flex justify-between items-center px-5 md:px-10  transform ease-in-out transition duration-500`}>
+                <label for="my-drawer" class="drawer-button  md:hidden">
                     <img src={menu} alt="" />
                 </label>
                 <div className='text-white md:text-[#646F75] mr-14 md:mr-0'>
@@ -32,7 +36,7 @@ const TopNav = () => {
                 </div>
                 <div className=' flex items-center'>
                     <img className='w-14 md:w-full' src={toggleSun} alt="Go to sun" />
-                    
+
 
                     {/* <div
                         className="md:w-14 md:h-7 w-12 h-6 flex items-center bg-gray-300 rounded-full p-1 cursor-pointer"
@@ -53,8 +57,6 @@ const TopNav = () => {
             </div>
 
             {/* ====================== ====================== */}
-
-
 
         </div>
     );
