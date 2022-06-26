@@ -113,11 +113,11 @@ const Home = () => {
                                              Upcoming   Appointments
                 ============================================================================================
                 */}
-            <div className='mb-10 '>
-                <div className='w-full bg-primary  lg:py-3 md:py-5 md:px-10 '>
+            <div className='mb-10 md:mr-10'>
+                <div className='w-full bg-primary md:rounded-lg lg:py-3 md:py-5  '>
 
 
-                    <div className='border p-4 m-4 rounded hidden md:block'>
+                    <div className='border-4  p-4 m-4  rounded md:rounded-lg hidden md:block'>
                         <h1 className=' text-base mb-3 font-medium text-neutral text-left'>Upcoming Appointments</h1>
                         <div className=' flex items-center' >
                             <div className=' flex flex-col items-center lg:mr-6 mr-3'>
